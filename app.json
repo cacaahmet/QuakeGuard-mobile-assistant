@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "QuakeGuard",
+    "slug": "QuakeGuard",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/deprem.png",
+
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+
+    "ios": {
+      "supportsTablet": true
+    },
+
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/deprem.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/deprem.png"
+    },
+
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/deprem.png",
+          "imageWidth": 250,
+          "resizeMode": "contain",
+          "backgroundColor": "#FFFFFF"
+        }
+      ]
+    ],
+
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+
+    "assetBundlePatterns": ["**/*"]
+  }
+}
