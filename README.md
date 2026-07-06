@@ -1,3 +1,4 @@
+<img width="268" height="560" alt="Ekran görüntüsü 2026-07-06 140527" src="https://github.com/user-attachments/assets/7c7c00f2-000f-4556-a44b-881c85b5cc12" />
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
