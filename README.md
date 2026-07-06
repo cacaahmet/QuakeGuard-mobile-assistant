@@ -1,70 +1,248 @@
-# 🛡️ QuakeGuard Assistant
+<div align="center">
 
-> [cite_start]Deprem öncesi, sırası ve sonrasında ihtiyaç duyulabilecek hayati bilgi ve araçları tek bir platformda toplayan, hayat kurtarıcı akıllı afet yardım asistanı. [cite: 4488, 4490]
+# 🌍 QuakeGuard Assistant
 
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Expo](https://img.shields.io/badge/Expo-1B1F23?style=for-the-badge&logo=expo&logoColor=white)
-![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
+### Deprem Öncesi, Sırası ve Sonrasında Yanınızda
 
-## 📱 Ekran Görüntüleri
+*Panik anında doğru davranışları hatırlatan, güncel deprem verilerini takip eden ve acil durumlarda hızlıca yardım çağırmanızı sağlayan çok fonksiyonlu mobil afet yardım uygulaması.*
 
-| Ana Sayfa (Canlı Deprem Takibi) | Acil Durum & Düdük | Toplanma Alanları | Panik Yönetimi Modu |
-|:---:|:---:|:---:|:---:|
-| ![Ana Sayfa](Görsel_Yolu_1) | ![Acil Durum](Görsel_Yolu_2) | ![Harita](Görsel_Yolu_3) | ![Panik Modu](Görsel_Yolu_4) |
+[![React Native](https://img.shields.io/badge/React%20Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](#)
+[![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)](#)
+[![Platform](https://img.shields.io/badge/Platform-iOS%20%7C%20Android-lightgrey?style=for-the-badge)](#)
+[![Redux](https://img.shields.io/badge/Redux%20Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white)](#)
 
----
-
-## ✨ Temel Özellikler
-
-QuakeGuard Assistant, afet yönetimi ve kişisel güvenlik için uçtan uca çözümler sunar:
-
-* [cite_start]🔴 **Canlı Deprem Takibi:** EMSC (Avrupa-Akdeniz Sismoloji Merkezi) API üzerinden anlık güncel deprem verilerinin harita ve liste görünümü[cite: 4520, 4987, 8946].
-* [cite_start]🚨 **Tek Tuşla Acil Yardım (SOS):** Saniyeler içinde 112'yi arama ve enkaz altında yer bildirmek için entegre yüksek sesli düdük sistemi[cite: 4521, 4803, 4819].
-* [cite_start]🏥 **Konum Bazlı Hizmetler:** GPS kullanılarak en yakın toplanma alanlarının, 100 KM çapındaki hastanelerin ve nöbetçi eczanelerin harita/liste üzerinden dinamik olarak bulunması[cite: 4522, 6918, 7822, 8886].
-* [cite_start]🔋 **Akıllı Enerji Asistanı:** Afet sonrası kısıtlı şarjı korumak için sistem parlaklığını kontrol eden ve gereksiz tüketimi engelleyen donanımsal güç tasarruf modları[cite: 4549, 6208, 6246].
-* [cite_start]🧘 **Panik Yönetimi Modu:** Kullanıcının sakin kalmasını sağlamak için sesli ve görsel bildirimlerle (Haptic feedback) desteklenen 4-7-8 nefes egzersizleri ve topraklama teknikleri[cite: 4548, 6732, 7553, 7555].
-* [cite_start]👨‍👩‍👧 **Aile Acil Planı & Deprem Çantası:** Aile bireylerinin iletişim bilgilerini (AsyncStorage ile) cihazda tutma, toplanma noktası belirleme ve detaylı ilk yardım çantası kontrol listesi oluşturma[cite: 4553, 5420, 6449, 6450].
-* [cite_start]📚 **Afet Bilinç Kütüphanesi:** Çök-Kapan-Tutun rehberleri, deprem mitleri/doğruları, bilgilendirici eğitim videoları ve canlı afet haberleri akışı[cite: 4577, 4579, 5958, 7139, 7300].
+</div>
 
 ---
 
-## 🛠️ Kullanılan Teknolojiler & Mimari
+## 📑 İçindekiler
 
-[cite_start]Uygulama, hem Android hem de iOS'ta tek kod tabanıyla yüksek performans sunmak üzere bileşen tabanlı, modüler bir mimariyle geliştirilmiştir[cite: 4495, 4514]. [cite_start]Dosya tabanlı yönlendirme (file-based routing) için **Expo Router** tercih edilmiştir[cite: 4497].
-
-| Kategori | Teknoloji / Kütüphane | Kullanım Amacı |
-| :--- | :--- | :--- |
-| **Frontend Framework** | React Native & Expo | [cite_start]Çapraz platform geliştirme ve donanım API erişimi[cite: 4495, 4496]. |
-| **Navigasyon** | Expo Router | [cite_start]Dosya tabanlı, modüler ekran yönetimi[cite: 4497, 4516]. |
-| **Durum Yönetimi** | Redux Toolkit & React-Redux | [cite_start]Uygulama içi global verilerin merkezi yönetimi[cite: 4511, 4512]. |
-| **Lokal Depolama** | AsyncStorage | [cite_start]Aile planı, rehber ve çevrimdışı ayarların cihazda saklanması[cite: 4509, 6421]. |
-| **Donanım & Medya** | Expo-AV, Battery, Location | [cite_start]Ses çalma (düdük/nefes), pil durumu analizi ve GPS konumu alma[cite: 4496, 4500, 4501, 4503]. |
-| **Harita & UI** | React Native Maps, Leaflet | [cite_start]Deprem merkez üsleri ve toplanma alanlarının görselleştirilmesi[cite: 4505, 4506, 8886]. |
-| **Veri Kaynakları** | EMSC API, NewsAPI | [cite_start]Gerçek zamanlı sismik hareketler ve son dakika haberleri[cite: 4629, 7273, 8946]. |
+- [Proje Hakkında](#-proje-hakkında)
+- [Projenin Amacı](#-projenin-amacı)
+- [Kullanılan Teknolojiler](#-kullanılan-teknolojiler)
+- [Uygulama Mimarisi](#-uygulama-mimarisi)
+- [Özellikler](#-özellikler)
+- [Kullanıcı Arayüzü (UI/UX)](#-kullanıcı-arayüzü-uiux)
+- [Backend Yapısı](#-backend-yapısı)
+- [Kurulum](#-kurulum)
+- [Sonuç ve Değerlendirme](#-sonuç-ve-değerlendirme)
+- [Yol Haritası](#-yol-haritası)
+- [Geliştirici](#-geliştirici)
 
 ---
 
-## 🚀 Kurulum ve Çalıştırma
+## 📱 Proje Hakkında
 
-Projeyi kendi bilgisayarınızda yerel olarak çalıştırmak için aşağıdaki adımları izleyebilirsiniz.
+**QuakeGuard Assistant**, deprem öncesi, sırası ve sonrasında kullanıcıya bilgi, yönlendirme ve acil destek sunmayı amaçlayan çok fonksiyonlu bir **mobil afet yardım uygulamasıdır**. Uygulama, olası bir deprem anında kullanıcının ihtiyaç duyabileceği tüm kritik araçları tek bir platformda birleştirir.
 
-### Ön Koşullar
-* Node.js (v16 veya üzeri önerilir)
-* npm veya yarn
-* Expo CLI (`npm install -g expo-cli`)
-* Fiziksel cihaz testleri için telefonunuzda **Expo Go** uygulaması
+> 🎓 **Öğrenci No:** 220912021 &nbsp;|&nbsp; **Adı Soyadı:** Ahmet Çaça
 
-### Adımlar
+---
 
-1. **Projeyi Klonlayın:**
-   ```bash
-   git clone [https://github.com/KULLANICI_ADINIZ/quakeguard-assistant.git](https://github.com/KULLANICI_ADINIZ/quakeguard-assistant.git)
-   cd quakeguard-assistant
+## 🎯 Projenin Amacı
 
-   Gerekli Paketleri Yükleyin:Bashnpm install
-# veya
-yarn install
-Uygulamayı Başlatın:Bashnpx expo start
-Çalıştırma:Açılan terminaldeki veya tarayıcıdaki QR kodu, telefonunuzdaki Expo Go uygulaması ile okutarak projeyi anında test edebilirsiniz.💡 Kullanım DetaylarıAcil Durum Paneli: Alt sekme çubuğundaki (Tab Bar) kırmızı ACİL butonuna basarak her an 112'yi arayabilir veya göçük altında kalma senaryosu için "Düdük Çal" fonksiyonunu aktif edebilirsiniz.  Pil ve Enerji Yönetimi: Menü üzerinden "Enerji & Şarj Yönetimi"ne girdiğinizde, sistem parlaklığını otomatik %10'a çeken 'Ultra Mod'u açarak afet sonrası cihazınızın kapanmasını geciktirebilirsiniz.  Konum İzinleri: Yakındaki hastaneleri ve toplanma alanlarını listelemek için uygulamanın konum izinlerine onay vermeniz gerekmektedir.  🤝 Katkıda Bulunma (Contributing)QuakeGuard Assistant, geliştirilmeye ve büyütülmeye açık bir projedir. Katkıda bulunmak isterseniz:  Bu depoyu (repository) forklayın.Yeni bir özellik dalı oluşturun (git checkout -b feature/YeniOzellik).Değişikliklerinizi commit edin (git commit -m 'Harika bir yeni özellik eklendi').Dalınızı (branch) gönderin (git push origin feature/YeniOzellik).Bir Pull Request (Çekme İsteği) oluşturun.Gelecek planları arasında; gerçek zamanlı push bildirimleri (erken uyarı), offline çalışma desteklerinin artırılması ve resmi kurum API'leriyle tam entegrasyon hedeflenmektedir.   📄 LisansBu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına göz atabilirsiniz.📬 İletişim & GeliştiriciAhmet ÇAÇA   Eğer projeyle ilgili sorularınız, önerileriniz veya iş birliği fikirleriniz varsa benimle bağlantı kurmaktan çekinmeyin:💼 LinkedIn: [Profil Linkinizi Buraya Ekleyin]🐙 GitHub: [https://github.com/KULLANICI_ADINIZ]✉️ E-posta: [E-posta Adresinizi Buraya Ekleyin]Güvenli, bilinçli ve afetlere her an hazırlıklı yarınlar için geliştirildi.
-Bu `README.md` dosyası, QuakeGuard projenin ne kadar kapsamlı ve detaylı olduğunu mükemmel 
+Bu proje, deprem öncesi, sırası ve sonrasında kullanıcıların ihtiyaç duyabileceği temel bilgi ve araçları tek bir platformda toplamak amacıyla geliştirilmiştir.
+
+Uygulama;
+
+- 🧠 Panik anında doğru davranışların hatırlatılmasını,
+- 📡 Güncel deprem bilgilerinin takip edilmesini,
+- 🆘 Acil durumlarda hızlıca yardım çağrılabilmesini
+
+sağlayan önemli ihtiyaçlara çözüm sunar. Ayrıca **toplanma alanları**, **ilk yardım çantası kontrolü**, **yakın hastaneler**, **acil durumlar için nöbetçi eczaneler**, **önceden hazırlanabilecek acil planlar**, **deprem simülasyonları** ve daha birçok özellik ile kullanıcıların afetlere daha hazırlıklı ve bilinçli olmalarını sağlamayı hedefler.
+
+---
+
+## 🛠 Kullanılan Teknolojiler
+
+**Geliştirme Ortamı:** Visual Studio Code (VS Code)
+
+Uygulama, **React Native** altyapısı kullanılarak geliştirilmiştir. Bu sayede uygulama hem **Android** hem de **iOS** platformlarında tek bir kod tabanı üzerinden çalışabilmektedir. Geliştirme sürecini daha hızlı ve verimli hale getirmek için **Expo** kullanılmış, böylece cihazın ses, konum, pil ve parlaklık gibi donanım özelliklerine kolayca erişim sağlanmıştır. Uygulama içerisindeki sayfa geçişleri ve ekran yapısı ise **Expo Router** ile yönetilmiş, bu sayede düzenli, okunabilir ve modüler bir navigasyon yapısı oluşturulmuştur.
+
+### 📦 Kullanılan Diğer Kütüphaneler
+
+| Kütüphane | Kütüphane |
+|---|---|
+| `expo-av` | `@react-native-async-storage/async-storage` |
+| `expo-battery` | `react-native-volume-manager` |
+| `expo-brightness` | `@reduxjs/toolkit` |
+| `expo-location` | `react-redux` |
+| `expo-linear-gradient` | |
+| `react-native-maps` | |
+| `leaflet` | |
+| `react-leaflet` | |
+| `@react-native-picker/picker` | |
+
+---
+
+## 🏗 Uygulama Mimarisi
+
+Uygulama, **modüler ve bileşen tabanlı bir mimari** ile geliştirilmiştir.
+
+- Uygulama; **ana ekran**, **acil durum** ve **menü** bölümleri olacak şekilde bölümlere ayrılmıştır.
+- Sayfa yapısı ve yönlendirmeler **Expo Router** kullanılarak **dosya tabanlı** olarak organize edilmiştir.
+- Ortak kullanılan bileşenler, ekranlar ve yardımcı fonksiyonlar ayrı klasörlerde tutularak kodun **okunabilirliği ve sürdürülebilirliği** sağlanmıştır.
+
+Bu yapı sayesinde uygulama kolayca geliştirilebilir ve yeni özellikler eklenebilir hale getirilmiştir.
+
+```
+📁 proje-kök-dizini
+├── 📁 app/                # Expo Router — dosya tabanlı sayfa yapısı
+│   ├── 📁 (ana-sayfa)/
+│   ├── 📁 (acil-durum)/
+│   └── 📁 (menu)/
+├── 📁 components/         # Ortak/paylaşılan bileşenler
+├── 📁 store/              # Redux Toolkit ile durum yönetimi
+├── 📁 services/           # Harici API çağrıları ve veri işleme
+├── 📁 assets/             # Görseller, ikonlar, medya dosyaları
+└── 📁 utils/              # Yardımcı fonksiyonlar
+```
+
+---
+
+## ✨ Özellikler
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🏠 Ana Sayfa
+- 📊 Güncel deprem verilerinin **liste** ve **harita** üzerinden görüntülenmesi
+- 📰 Haberler
+- 🩹 Nöbetçi eczane sorgulama (şehir/ilçe bazlı arama ve arama tuşu)
+
+### 🆘 Acil Durum
+- ☎️ Tek tuşla **112 arama**
+- 📣 **Düdük çal** — enkaz altında yerinizi belli etmek için sesli uyarı sistemi
+
+</td>
+<td width="50%" valign="top">
+
+### 📋 Menü
+- 🧩 Deprem Simülasyonu & Bilgi Testi
+- 📄 Eylem Planı
+- ⚠️ Acil Durum Rehberi
+- 🧰 İlk Yardım Çantası
+- 🗺️ Risk Haritaları & Fay Hatları
+- 👥 Toplanma Alanları
+- 🏥 Yakınımdaki Hastaneler
+- 💊 Nöbetçi Eczaneler
+- ❤️ Panik Yönetimi Modu
+- 🔋 Enerji & Şarj Yönetimi Asistanı
+- 👨‍👩‍👧‍👦 Aile Acil Planı
+- 🧘 Deprem Sonrası Psikolojik Destek Rehberi
+- ❓ Deprem Mitleri & Doğrular
+- 🎓 Deprem Eğitimi (Mini Dersler)
+- 🎬 Bilgilendirici Videolar
+- 💬 Sık Sorulan Sorular (SSS)
+
+</td>
+</tr>
+</table>
+
+Rehber, ilk yardım çantası kontrolü, yakın hastaneler, nöbetçi eczaneler, önceden hazırlanabilen acil planlar, deprem simülasyonları ve daha birçok yardımcı özellik uygulama içerisinde yer almaktadır.
+
+---
+
+## 🎨 Kullanıcı Arayüzü (UI/UX)
+
+Uygulama, **sade, modern ve kullanıcı dostu** bir arayüz anlayışıyla tasarlanmıştır.
+
+- Acil durumlarda kullanıcıyı yormayacak **net renkler**
+- **Büyük butonlar** ve kolay anlaşılır **ikonlar**
+- Akıcı uygulama içi geçişler
+- Kullanıcıların ihtiyaç duyduğu bilgilere **hızlı ve kolay** ulaşımı hedefleyen navigasyon yapısı
+
+Arayüz tasarımında hem **estetik** hem de **kullanılabilirlik** ön planda tutulmuştur.
+
+| Ana Sayfa | Menü | Menü (Devamı) |
+|:---:|:---:|:---:|
+| Son depremler haritası ve listesi | Simülasyon, eylem planı, rehberler | Nöbetçi eczane, haberler, panik modu |
+
+| Acil Durum | Video Rehber | Nöbetçi Eczaneler |
+|:---:|:---:|:---:|
+| 112 Ara / Düdük Çal | Afet bilinç kütüphanesi | Şehir/ilçe bazlı sorgulama |
+
+---
+
+## 🗄 Backend Yapısı
+
+QuakeGuard Assistant uygulamasında backend yapısı, **farklı veri kaynaklarının birlikte kullanıldığı** bir mimari üzerine kurulmuştur. Klasik bir sunucu tabanlı backend yerine, **harici servisler**, **API'ler** ve **sunucu tabanlı kaynaklar** kullanılarak veri akışı sağlanmaktadır.
+
+| Veri Türü | Kaynak |
+|---|---|
+| Güncel deprem verileri | Harici API |
+| Acil durum bilgileri | Harici API |
+| Hastaneler / iller | Hazır veri setleri |
+| Nöbetçi eczaneler | Sunucu üzerinden (dinamik) |
+
+Nöbetçi eczaneler gibi dinamik veriler sunucu üzerinden çekilmekte ve uygulamada arka planda **Redux** kullanılarak merkezi bir şekilde yönetilmektedir. Backend mantığı; **veri çekme → işleme → durum yönetimi → arayüze aktarma** şeklinde organize edilmiştir. Dosya yapısında bu işlemler ayrı klasörlerde tutulmuştur.
+
+```
+Harici API'ler ──┐
+Veri Setleri ────┼──► Servisler ──► Redux Store ──► UI Bileşenleri
+Sunucu Kaynağı ──┘
+```
+
+---
+
+## ⚙️ Kurulum
+
+```bash
+# 1. Depoyu klonlayın
+git clone <repo-url>
+cd quakeguard-assistant
+
+# 2. Bağımlılıkları yükleyin
+npm install
+
+# 3. Expo geliştirme sunucusunu başlatın
+npx expo start
+```
+
+> 💡 Uygulamayı fiziksel bir cihazda test etmek için **Expo Go** uygulamasını kullanabilir, ya da Android/iOS emülatöründe çalıştırabilirsiniz.
+
+---
+
+## ✅ Sonuç ve Değerlendirme
+
+QuakeGuard Assistant, deprem gibi afet durumlarında kullanıcıların ihtiyaç duyabileceği temel bilgi ve araçları tek bir mobil uygulama altında toplayarak önemli bir problemi çözmeyi amaçlamıştır. Proje sürecinde;
+
+- 📱 Mobil uygulama geliştirme
+- 🧱 Bileşen tabanlı mimari
+- 🌐 Harici API kullanımı
+- 🔄 State yönetimi
+- 🎨 Kullanıcı odaklı arayüz tasarımı
+
+konularında önemli deneyimler kazanılmıştır. Uygulama; teknik açıdan **modüler**, **sürdürülebilir** ve **geliştirilmeye açık** bir yapı ile tamamlanmıştır.
+
+---
+
+## 🚀 Yol Haritası
+
+Gelecekte proje kapsamı daha da genişletilerek aşağıdaki geliştirmeler planlanmaktadır:
+
+- 🔔 Gerçek zamanlı bildirim sistemleri
+- ⚡ Deprem anında otomatik uyarı mekanizmaları
+- 🌙 Arka planda çalışan servisler
+- 📍 Kullanıcı konumuna göre daha akıllı yönlendirmeler
+- 📴 Offline çalışma desteğinin ilerletilmesi
+- 🎛️ Kişiselleştirilebilir ayarlar
+- 🧭 Daha detaylı acil durum senaryoları
+- 🧪 Gerçek kullanıcılarla test süreçleri, performans ve kullanılabilirlik iyileştirmeleri
+- 🏛️ Resmi kurumlarla entegre çalışabilecek bir yapıya dönüşüm
+
+---
+
+## 👤 Geliştirici
+
+**Ahmet Çaça**
+Öğrenci No: 220912021
+
+---
+
+<div align="center">
+
+*Bu proje, deprem afetlerine karşı toplumsal farkındalığı ve hazırlığı artırmak amacıyla geliştirilmiştir.* 🇹🇷
+
+</div>
