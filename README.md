@@ -240,9 +240,9 @@ Gelecekte proje kapsamı daha da genişletilerek aşağıdaki geliştirmeler pla
 
 ## 👤 Geliştirici & İletişim
 
-Bu proje **Ahmet Çaça** (Öğrenci No: `220912021`) tarafından tasarlanmış ve geliştirilmiştir. 
+Bu proje **Ahmet Çaça** tarafından tasarlanmış ve geliştirilmiştir. 
 
-Proje hakkında geri bildirimde bulunmak, detaylı bilgi almak, sorularınızı iletmek veya iş birliği yapmak isterseniz benimle aşağıdaki iletişim kanallarından her zaman bağlantıya geçebilirsiniz.
+Proje hakkında geri bildirimde bulunmak, detaylı bilgi almak, sorularınızı iletmek veya iş birliği yapmak isterseniz benimle aşağıdaki kanallarından iletişime geçebilirsiniz.
 
 <div align="center">
   
@@ -259,7 +259,7 @@ Proje hakkında geri bildirimde bulunmak, detaylı bilgi almak, sorularınızı 
 ---
 
 <div align="center">
-  <p><i>Zaman ayırıp projemi incelediğiniz için teşekkür ederim! Destek olmak isterseniz projeyi yıldızlamayı (⭐) unutmayın. 🚀</i></p>
+  <p><i>Zaman ayırıp projemi incelediğiniz için teşekkür ederim!</i></p>
 </div>
 
 *Bu proje, deprem afetlerine karşı toplumsal farkındalığı ve hazırlığı artırmak amacıyla geliştirilmiştir.* 🇹🇷
