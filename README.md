@@ -33,7 +33,7 @@
 
 **QuakeGuard Assistant**, deprem öncesi, sırası ve sonrasında kullanıcıya bilgi, yönlendirme ve acil destek sunmayı amaçlayan çok fonksiyonlu bir **mobil afet yardım uygulamasıdır**. Uygulama, olası bir deprem anında kullanıcının ihtiyaç duyabileceği tüm kritik araçları tek bir platformda birleştirir.
 
-> 🎓 **Öğrenci No:** 220912021 &nbsp;|&nbsp; **Adı Soyadı:** Ahmet Çaça
+> 🎓 **Adı Soyadı:** Ahmet Çaça
 
 ---
 
@@ -106,8 +106,7 @@ Bu yapı sayesinde uygulama kolayca geliştirilebilir ve yeni özellikler eklene
 
 ### 🏠 Ana Sayfa
 - 📊 Güncel deprem verilerinin **liste** ve **harita** üzerinden görüntülenmesi
-- 📰 Haberler
-- 🩹 Nöbetçi eczane sorgulama (şehir/ilçe bazlı arama ve arama tuşu)
+- Detaylı deprem analizi
 
 ### 🆘 Acil Durum
 - ☎️ Tek tuşla **112 arama**
@@ -125,6 +124,7 @@ Bu yapı sayesinde uygulama kolayca geliştirilebilir ve yeni özellikler eklene
 - 👥 Toplanma Alanları
 - 🏥 Yakınımdaki Hastaneler
 - 💊 Nöbetçi Eczaneler
+- 📰 Haberler
 - ❤️ Panik Yönetimi Modu
 - 🔋 Enerji & Şarj Yönetimi Asistanı
 - 👨‍👩‍👧‍👦 Aile Acil Planı
@@ -238,14 +238,29 @@ Gelecekte proje kapsamı daha da genişletilerek aşağıdaki geliştirmeler pla
 
 ---
 
-## 👤 Geliştirici
+## 👤 Geliştirici & İletişim
 
-**Ahmet Çaça**
-Öğrenci No: 220912021
+Bu proje **Ahmet Çaça** (Öğrenci No: `220912021`) tarafından tasarlanmış ve geliştirilmiştir. 
+
+Proje hakkında geri bildirimde bulunmak, detaylı bilgi almak, sorularınızı iletmek veya iş birliği yapmak isterseniz benimle aşağıdaki iletişim kanallarından her zaman bağlantıya geçebilirsiniz.
+
+<div align="center">
+  
+  <img width="850" alt="Ahmet Çaça İletişim" src="https://github.com/user-attachments/assets/1688e904-a044-4831-aa06-7c22d4b8822c" />
+
+  <br><br>
+
+  <a href="mailto:ahmetcaca.dev@gmail.com">
+    <img src="https://img.shields.io/badge/E_Posta-ahmetcaca.dev@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  
+</div>
 
 ---
 
 <div align="center">
+  <p><i>Zaman ayırıp projemi incelediğiniz için teşekkür ederim! Destek olmak isterseniz projeyi yıldızlamayı (⭐) unutmayın. 🚀</i></p>
+</div>
 
 *Bu proje, deprem afetlerine karşı toplumsal farkındalığı ve hazırlığı artırmak amacıyla geliştirilmiştir.* 🇹🇷
 
