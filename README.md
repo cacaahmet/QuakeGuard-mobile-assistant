@@ -1,5 +1,3 @@
-<div align="center">
-
 # 🌍 QuakeGuard Assistant
 
 ### Deprem Öncesi, Sırası ve Sonrasında Yanınızda
@@ -148,21 +146,26 @@ Rehber, ilk yardım çantası kontrolü, yakın hastaneler, nöbetçi eczaneler,
 
 Uygulama, **sade, modern ve kullanıcı dostu** bir arayüz anlayışıyla tasarlanmıştır.
 
-- Acil durumlarda kullanıcıyı yormayacak **net renkler**
-- **Büyük butonlar** ve kolay anlaşılır **ikonlar**
-- Akıcı uygulama içi geçişler
-- Kullanıcıların ihtiyaç duyduğu bilgilere **hızlı ve kolay** ulaşımı hedefleyen navigasyon yapısı
+- 🎯 Acil durumlarda kullanıcıyı yormayacak **net ve sakin renkler**
+- 🔘 **Büyük butonlar** ve kolay anlaşılır **ikonlar**
+- 🌊 Akıcı uygulama içi geçişler
+- 🧭 Kullanıcıların ihtiyaç duyduğu bilgilere **hızlı ve kolay** ulaşımı hedefleyen navigasyon yapısı
 
 Arayüz tasarımında hem **estetik** hem de **kullanılabilirlik** ön planda tutulmuştur.
 
+<div align="center">
+
 | Ana Sayfa | Menü | Menü (Devamı) |
 |:---:|:---:|:---:|
+| <img src="https://github.com/user-attachments/assets/b8ba8f44-ab15-4497-9386-5dc5617d240f" width="250"/> | <img src="https://github.com/user-attachments/assets/3edf15eb-d2b2-4343-b28e-e2994589ec62" width="250"/> | <img src="https://github.com/user-attachments/assets/cd335057-3865-4290-bb2d-ae024b511242" width="250"/> |
 | Son depremler haritası ve listesi | Simülasyon, eylem planı, rehberler | Nöbetçi eczane, haberler, panik modu |
 
 | Acil Durum | Video Rehber | Nöbetçi Eczaneler |
 |:---:|:---:|:---:|
+| <img src="https://github.com/user-attachments/assets/0ef29563-55da-43b0-9c3e-0d3dbc523b4e" width="250"/> | <img src="https://github.com/user-attachments/assets/bffa7359-a4d8-4bbd-9f7a-2e10c56d9bd2" width="250"/> | <img src="https://github.com/user-attachments/assets/b3fab4fb-4b18-47a9-bc89-a7bf42c1b511" width="250"/> |
 | 112 Ara / Düdük Çal | Afet bilinç kütüphanesi | Şehir/ilçe bazlı sorgulama |
 
+</div>
 ---
 
 ## 🗄 Backend Yapısı
