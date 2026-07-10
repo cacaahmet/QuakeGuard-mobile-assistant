@@ -85,15 +85,16 @@ Bu yapı sayesinde uygulama kolayca geliştirilebilir ve yeni özellikler eklene
 
 ```
 📁 proje-kök-dizini
-├── 📁 app/                # Expo Router — dosya tabanlı sayfa yapısı
-│   ├── 📁 (ana-sayfa)/
-│   ├── 📁 (acil-durum)/
-│   └── 📁 (menu)/
-├── 📁 components/         # Ortak/paylaşılan bileşenler
-├── 📁 store/              # Redux Toolkit ile durum yönetimi
-├── 📁 services/           # Harici API çağrıları ve veri işleme
-├── 📁 assets/             # Görseller, ikonlar, medya dosyaları
-└── 📁 utils/              # Yardımcı fonksiyonlar
+├── 📁 app/   
+│   ├── 📁 (menu)/
+│   └── 📁 (tabs)/
+├── 📁 assets/         
+├── 📁 components/             
+├── 📁 constants/           
+├── 📁 hooks/             
+├── 📁 scripts/
+├── 📁 store/
+└── 📁 yedek eczane-api/            
 ```
 
 ---
@@ -240,9 +241,9 @@ Gelecekte proje kapsamı daha da genişletilerek aşağıdaki geliştirmeler pla
 
 ## 👤 Geliştirici & İletişim
 
-Bu proje **Ahmet Çaça** tarafından tasarlanmış ve geliştirilmiştir. 
+Bu çalışma **Ahmet Çaça** tarafından tasarlanmış ve geliştirilmiştir. 
 
-Proje hakkında geri bildirimde bulunmak, detaylı bilgi almak, sorularınızı iletmek veya iş birliği yapmak isterseniz benimle aşağıdaki kanallarından iletişime geçebilirsiniz.
+Çalışma hakkında geri bildirimde bulunmak, detaylı bilgi almak, sorularınızı iletmek veya iş birliği yapmak isterseniz benimle aşağıdaki kanallardan iletişime geçebilirsiniz.
 
 <div align="center">
   
@@ -259,9 +260,9 @@ Proje hakkında geri bildirimde bulunmak, detaylı bilgi almak, sorularınızı 
 ---
 
 <div align="center">
-  <p><i>Zaman ayırıp projemi incelediğiniz için teşekkür ederim!</i></p>
+  <p><i>Zaman ayırıp çalışmamı incelediğiniz için teşekkür ederim!</i></p>
 </div>
 
-*Bu proje, deprem afetlerine karşı toplumsal farkındalığı ve hazırlığı artırmak amacıyla geliştirilmiştir.* 🇹🇷
+*Bu çalışma, deprem afetlerine karşı toplumsal farkındalığı ve hazırlığı artırmak amacıyla geliştirilmiştir.* 🇹🇷
 
 </div>
