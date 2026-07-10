@@ -146,26 +146,62 @@ Rehber, ilk yardım çantası kontrolü, yakın hastaneler, nöbetçi eczaneler,
 
 Uygulama, **sade, modern ve kullanıcı dostu** bir arayüz anlayışıyla tasarlanmıştır.
 
-- 🎯 Acil durumlarda kullanıcıyı yormayacak **net ve sakin renkler**
-- 🔘 **Büyük butonlar** ve kolay anlaşılır **ikonlar**
-- 🌊 Akıcı uygulama içi geçişler
-- 🧭 Kullanıcıların ihtiyaç duyduğu bilgilere **hızlı ve kolay** ulaşımı hedefleyen navigasyon yapısı
+- Acil durumlarda kullanıcıyı yormayacak **net renkler**
+- **Büyük butonlar** ve kolay anlaşılır **ikonlar**
+- Akıcı uygulama içi geçişler
+- Kullanıcıların ihtiyaç duyduğu bilgilere **hızlı ve kolay** ulaşımı hedefleyen navigasyon yapısı
 
-Arayüz tasarımında hem **estetik** hem de **kullanılabilirlik** ön planda tutulmuştur.
+Arayüz tasarımında hem **estetik** hem de **kullanılabilirlik** ön planda tutulmuştur. İlgili ekranlara ve özelliklerine aşağıdan göz atabilirsiniz:
 
-<div align="center">
+<br>
 
-| Ana Sayfa | Menü | Menü (Devamı) |
-|:---:|:---:|:---:|
-| <img src="https://github.com/user-attachments/assets/b8ba8f44-ab15-4497-9386-5dc5617d240f" width="250"/> | <img src="https://github.com/user-attachments/assets/3edf15eb-d2b2-4343-b28e-e2994589ec62" width="250"/> | <img src="https://github.com/user-attachments/assets/cd335057-3865-4290-bb2d-ae024b511242" width="250"/> |
-| Son depremler haritası ve listesi | Simülasyon, eylem planı, rehberler | Nöbetçi eczane, haberler, panik modu |
-
-| Acil Durum | Video Rehber | Nöbetçi Eczaneler |
-|:---:|:---:|:---:|
-| <img src="https://github.com/user-attachments/assets/0ef29563-55da-43b0-9c3e-0d3dbc523b4e" width="250"/> | <img src="https://github.com/user-attachments/assets/bffa7359-a4d8-4bbd-9f7a-2e10c56d9bd2" width="250"/> | <img src="https://github.com/user-attachments/assets/b3fab4fb-4b18-47a9-bc89-a7bf42c1b511" width="250"/> |
-| 112 Ara / Düdük Çal | Afet bilinç kütüphanesi | Şehir/ilçe bazlı sorgulama |
-
-</div>
+<table align="center">
+  <tr>
+    <td align="center"><strong>Ana Sayfa</strong></td>
+    <td align="center"><strong>Menü</strong></td>
+    <td align="center"><strong>Menü (Devamı)</strong></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/b8ba8f44-ab15-4497-9386-5dc5617d240f" width="250" alt="Ana Sayfa" />
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/3edf15eb-d2b2-4343-b28e-e2994589ec62" width="250" alt="Menü" />
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/cd335057-3865-4290-bb2d-ae024b511242" width="250" alt="Menü Devamı" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">Son depremler haritası ve listesi</td>
+    <td align="center">Simülasyon, eylem planı, rehberler</td>
+    <td align="center">Nöbetçi eczane, haberler, panik modu</td>
+  </tr>
+  <tr>
+    <td colspan="3"><hr></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Acil Durum</strong></td>
+    <td align="center"><strong>Video Rehber</strong></td>
+    <td align="center"><strong>Nöbetçi Eczaneler</strong></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/0ef29563-55da-43b0-9c3e-0d3dbc523b4e" width="250" alt="Acil Durum" />
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/bffa7359-a4d8-4bbd-9f7a-2e10c56d9bd2" width="250" alt="Video Rehber" />
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/b3fab4fb-4b18-47a9-bc89-a7bf42c1b511" width="250" alt="Nöbetçi Eczaneler" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">112 Ara / Düdük Çal</td>
+    <td align="center">Afet bilinç kütüphanesi</td>
+    <td align="center">Şehir/ilçe bazlı sorgulama</td>
+  </tr>
+</table>
 ---
 
 ## 🗄 Backend Yapısı
